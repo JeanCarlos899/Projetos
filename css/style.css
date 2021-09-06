@@ -165,7 +165,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-.header-conteudo a {
+.header-conteudo #btn-ctt {
     display: inline-block;
     margin-top: 2rem;
     text-decoration: none;
@@ -175,13 +175,24 @@ body {
     font-weight: bold;
     border-radius: 1rem;
     border: #13293D solid 0.3rem;
-    
 }
 
-.header-conteudo a:hover {
+.header-conteudo #btn-ctt:hover {
     background-color: #1B98E0;
     transition: 0.5s;
     color: #ffffff;
+    transform: scale(1.1);
+}
+
+i {
+    color: white;
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+i:hover {
     transform: scale(1.1);
 }
 
@@ -191,7 +202,7 @@ body {
     height: 20px;
 }
 
-/* ------------ jeanc ------------ */
+/* ------------ jean ------------ */
 .titulo-principal {
     margin-top: 5rem;
     text-align: center;
@@ -213,7 +224,7 @@ body {
 
 }
 
-.jeanc {
+.jean {
     padding-top: 6rem;
 }
 
