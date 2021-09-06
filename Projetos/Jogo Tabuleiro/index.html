@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jogo tabuleiro - Jean Carlos</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/time.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="JavaScript/move.js"></script>
+    <script src="JavaScript/conf.js"></script>
+    <script src="JavaScript/dado.js"></script>
+    <script src="JavaScript/sorte.js"></script>
+    <script src="JavaScript/time.js"></script>
+    <script src="JavaScript/vJogador.js"></script>
+</head>
+<body>
+    <!-- PARA FINS DE EXEMPLO, OPTEI POR NÃO UTILIZAR 'FOR' E 'ALT' -->
+    <div class="container" id="container">
+
+        <div id="jogadores">
+            <img id="play1" class="player" src="img/Peao-Grow-Branco.png" alt=""> 
+            <img id="play2" class="player" src="img/Peao-Grow-Azul.png" alt=""> 
+            <img id="play3" class="player" src="img/Peao-Grow-Preto.png" alt=""> 
+            <img id="play4" class="player" src="img/Peao-Grow-Verde.png" alt="">
+        </div>
+
+        <div id="div_dado">
+            <div id="divOrientacao" onclick="orientacaoJogador()"><img id="face" src="img/face1.png" onclick="sorteioDado()"></div>
+            <h3 id="ultimoSorteado">Face anterior: </h3>
+            <h3 id="avisoDualsSorteio"></h3>
+        </div> 
+
+        <div id="div_sorte">
+            <div onclick="sorteOrientacao()"><img id="sorte" src="img/sorte.png" alt="" onclick="sorteioSorte()"></div>
+            <h4 id="sorte_sorteada">Tire a sorte quanto estiver nas casas azuis</h4>
+        </div> 
+
+        <div id="time">
+            <div id="rodaRelogio">
+                <div id="div_redonda" class="item html" onclick="inicioRelogio()">
+                    <h2 id="numberH">0</h2>
+                    <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                    <circle id="circle" class="circle_animation" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#ffff00" fill="none"/>
+                    </g>
+                    </svg> 
+                </div>
+            </div>
+            <div id="botoes">
+                <button onclick="noventaSegundos()">90s</button>
+                <button onclick="sessentaSegundos()">60s</button>
+                <button onclick="reset()">Reiniciar</button>
+            </div>
+        </div>
+
+        <div id="reload">
+            <img id="reloadImg" src="img/reload.png" alt="" onclick="recarregar()">
+        </div>
+
+        <div id="jog_vez">
+            <img id="jogVez" src="img/Peao-Grow-Branco.png" alt="">
+        </div>
+
+        <div id="imagem">
+            <img id="imgjogo" src="img/img_table.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

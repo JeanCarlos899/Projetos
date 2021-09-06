@@ -1,0 +1,115 @@
+body{
+    overflow: hidden;
+    background-image: url(https://i.pinimg.com/originals/7d/85/6c/7d856c30e5e314f2cd6507c214ff7c92.jpg);
+}
+
+#imgjogo{
+    margin-left: 0;
+    width: 1100px;
+    height: 610px;
+    border-radius: 15px;
+}
+
+.player{
+    position: absolute;
+    margin-top: 510px;
+    width: 30px;
+}
+
+#play1{
+    margin-left: 35px;
+}
+#play2{
+    margin-left: 65px;
+}
+#play3{
+    margin-left: 95px;
+}
+#play4{
+    margin-left: 125px;
+}
+#face {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+}
+#div_dado{
+    position: absolute;
+    background-color: darkgray;
+    margin-left: 1130px;
+    opacity: 95%;
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
+    padding: 15px;
+}
+h3, h4{
+    text-align: center;
+}
+#sorte{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+}
+#div_sorte{
+    position: absolute;
+    background-color: darkgray;
+    margin-top: 210px;
+    margin-left: 1130px;
+    opacity: 90%;
+    width: 170px;
+    height: 140px;
+    border-radius: 15px;
+    padding: 15px;
+}
+#botoes{
+    margin-left: 10px;
+    margin-top: 8px;
+}
+button{
+    margin-left: 2px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #8B011B;
+}
+button:hover{
+    background-color: #ffff00;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 1em rgb(124, 122, 122);
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+#reloadImg{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 40px;
+    position: absolute;
+    background-color: #FACC17;
+    border-radius: 10px;
+}
+
+#jogVez{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 5px;
+    width: 30px;
+}
+
+#divOrientacao{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: 90px;
+}

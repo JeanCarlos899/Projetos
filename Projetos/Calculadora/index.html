@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+    //Java Script
+        function calc(e){
+    
+            var operacao = e.value;
+            
+            var n1 = parseFloat(document.getElementById("n1").value);
+            var n2 = parseFloat(document.getElementById("n2").value);
+
+            if (operacao == "ₓʸ") {
+                var calculo = Math.pow(n1, n2)
+                if (!isNaN(calculo)) {
+                    document.getElementById('resultado').innerHTML = n1 + "^" + n2 + " = " + calculo;
+                } else {
+                    document.getElementById('resultado').innerHTML = "Insira um número";
+                }
+            } else if (operacao == "ʸ√ₓ") {
+                if (!isNaN(n1)){
+                    if (isNaN(n2)){
+                        var calculo = Math.sqrt(n1).toFixed(2)
+                        document.getElementById('resultado').innerHTML = "√" + n1 + " = " + calculo;
+                    }
+                    else if (!isNaN(n2)) {
+                        var calculo = Math.pow(n1, 1.0/n2).toFixed(2)
+                        document.getElementById('resultado').innerHTML = "√" + n1 + " = " + calculo;
+                    }
+                } else {
+                    document.getElementById('resultado').innerHTML = "Insira ao menos o número um para calcular a raiz quadrada"
+                }
+            } else {
+                var calculo = eval(n1 + operacao + n2);
+                if (!isNaN(calculo)) {
+                    document.getElementById('resultado').innerHTML = n1 + operacao + n2 + " = " + calculo;
+                } else {
+                    document.getElementById('resultado').innerHTML = "Insira um número";
+                }
+            }
+        }
+
+        function apagarResultado() {
+            document.querySelector('#resultado').innerHTML = '';
+        }
+
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://doity.com.br/media/doity/eventos/evento-5144-logo_organizador.png" type="image/png">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <!--Aqui, nessa div, têm os inputs e os formulários-->
+    <div class="div1">
+
+        <h1>Calculadora</h1>
+        
+        <div class="corpo">
+            <form>
+                <label>Número um:</label><br>
+                <input type="number" id="n1" placeholder="Insira o número um ou x"><br><br>
+                <label>Número dois:</label><br>
+                <input type="number" id="n2" placeholder="Insira o número dois ou y"><br><br>
+                <div class="botoes">
+                    <input id="button1" type="button" value="+" onClick="calc(this)">
+                    <input id="button2" type="button" value="-" onClick="calc(this)">
+                    <input id="button3" type="button" value="*" onClick="calc(this)">
+                    <input id="button4" type="button" value="/" onClick="calc(this)">
+                    <input id="button5" type="button" value="ₓʸ" onClick="calc(this)">
+                    <input id="button6" type="button" value="ʸ√ₓ" onClick="calc(this)">
+                    <input id="reset" type="reset" value="Limpar" onClick="apagarResultado()">
+                </div>
+            </form>
+
+            <!--Imprimir na tela 2.0/Otimizado-->
+            <!--Correção do bug: "sem quebra de linha"-->
+            <!--Solução, CSS: word-wrap: break-word;-->
+            <label>Resultado:</label>
+            <div id="divResultado">
+                <p id="resultado"></p>
+            </div>
+        </div>
+
+
+        <!--Instruções de uso-->
+        <div class="instrucoes">
+            <dl>
+                <dt>Como usar?</dt>
+                <ol>
+                    <li>Adicione o primeiro número</li>
+                    <li>Adicione o segundo número</li>
+                    <li>Clique no operador desejado e <br>o resultado aparecerá acima</li>
+                </ol>
+            </dl>
+        </div>
+
+
+        <!--Rodapé-->
+        <div class="ptbaixo">
+            <footer>
+                <p>Calculadora feita usando HTML, CSS e JavaScript | Desafio extra de IPW | Feito por Jean Carlos</p>
+            </footer>
+        </div>
+
+    </div>
+
+
+</body>
+    <!--CSS-->
+    <style>
+
+        .div1 {
+            background-image: url(https://img.freepik.com/fotos-gratis/conceito-textured-pintado-colorido-concreto-do-papel-de-parede-da-parede_53876-31799.jpg?size=626&ext=jpg&ga=GA1.2.1377952299.1616630400);
+            width: 400px;
+            height: 450px;
+            background-color: #fff;
+            padding: 10px;
+            margin: 50px auto;
+            border-radius: 20px;
+            color: #fff;
+        }
+        body {
+            background-image: url(https://www.significadofacil.com/wp-content/uploads/2019/07/background.jpg);
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+        form {
+            margin: 0 auto;
+        }
+        #n1, #n2 {
+            margin-left: 35px;
+            border-style: solid;
+            border-radius: 10px;
+            padding: 10px;
+            width: 310px;
+            backface-visibility: visible;
+            opacity: 70%;
+            border: 0 none;
+            outline: 0;
+        }
+        label {
+            margin-left: 35px;
+        }
+        .botoes {
+            margin-left: 35px;
+        }
+        #button1, #button2, #button3, #button4, #button5, #button6 {
+            color: white;
+            background: rgb(9, 40, 80);
+            border: 0;
+            border-radius: 3px;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            outline: 0;
+            font-size: 18px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        #reset {
+            position: absolute;
+            margin-left: 4px;
+            color: rgb(97, 17, 17);
+            background: white;
+            border: 0;
+            backface-visibility: visible;
+            opacity: 70%;
+            border-radius: 8px;
+            width: 66px;
+            height: 30px;
+            outline: 0;
+            cursor: pointer;
+        }
+        footer {
+            background-image: url(https://img.freepik.com/fotos-gratis/conceito-textured-pintado-colorido-concreto-do-papel-de-parede-da-parede_53876-31799.jpg?size=626&ext=jpg&ga=GA1.2.1377952299.1616630400);
+            width: 100%;
+            height: 45px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding-bottom: 0px;
+            text-align: center;
+            color: lightslategrey;
+        }
+        .instrucoes {
+            margin-top: 30px;
+            margin-left: 35px;
+        }
+        ol {
+            margin-top: 3px;
+        }
+        #divResultado {
+            margin-top: 0;
+            word-wrap: break-word;
+            color: black;
+            background-color: #fff;
+            margin-left: 35px;
+            border-radius: 10px;
+            height: 40px;
+            width: 330px;
+            backface-visibility: visible;
+            opacity: 70%;
+            border: 0 none;
+            outline: 0;
+            text-align: center;
+            font-family: 'Times New Roman';
+            font-size: 17px;
+        }
+        #resultado {
+            margin-top: 2px;
+            word-wrap: break-word;
+            height: 35px;
+            width: 330px;
+            text-align: center;
+            font-family: 'Times New Roman';
+            font-size: 17px;
+        }
+        
+    </style>
+</html>

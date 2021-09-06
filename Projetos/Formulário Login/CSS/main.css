@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(130,96,153);
+    background: linear-gradient(238deg, rgba(130,96,153,1) 0%, rgba(44,133,182,1) 100%);
+    height: 768px;
+    overflow: hidden;
+}
+fieldset{
+    border: 0;
+}
+legend{
+    font-family: 'Arial';
+    font-size: 30px; 
+    text-align: center;
+}
+#img_user{
+    width: 50px;
+    display: block;
+    margin: 0 auto 5px;
+}
+#area{
+    display: block;
+    width: 390px;
+    height: 550px;
+    margin: 30px auto;
+    background: rgb(131,58,180);
+    background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(176,94,94,1) 100%);
+    padding: 30px;
+    border-radius: 10px;
+}
+#my_form, #other_way{
+    color: white;
+}
+.campo input[type="email"], .campo input[type="text"], .campo input[type="password"]{
+    border-style: solid;
+    border-radius: 8px;
+    padding: 10px;
+    width: 330px;
+    backface-visibility: visible;
+    opacity: 70%;
+    border: 0 none;
+    outline: 0;
+    margin-bottom: 5px;
+}
+.campo input[type="email"]:hover, .campo input[type="text"]:hover, .campo input[type="password"]:hover{
+    background-color: rgb(228, 227, 227);
+}
+#btn_submit{
+    border-style: solid;
+    border-radius: 8px;
+    padding: 10px;
+    width: 180px;
+    backface-visibility: visible;
+    opacity: 70%;
+    border: 0 none;
+    outline: 0;
+    margin-bottom: 5px;
+}
+#btn_submit:hover{
+    background-color: silver;
+    cursor: pointer;
+}
+#other_way{
+    text-align: center;
+    margin-top: 15px;
+}
+#other_way img{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+#img_for_user, #img_for_mail, #img_for_password_key{
+    width: 20px;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -30px;
+}
+
