@@ -24,10 +24,14 @@
             <nav>
                 <h1><span>Jean</span> Carlos</h1>
                 <ul>
-                    <li>Inicio</li>
-                    <li onclick="moveSobreMim()">Sobre mim</li>
+                    <li>Home</li>
+                    <li onclick="moveSobreMim()">Sobre</li>
                     <li onclick="moveProjetos()">Projetos</li>
                     <li onclick="moveContato()">Contato</li>
+                    
+                    <li><a target="_blank" href="https://github.com/JeanCarlos899"><i class="fab fa-github"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/jean-carlos-a45936184/"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/jean_carl02/"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -38,11 +42,6 @@
         <h1>Técnico em Informática Desenvolvedor WEB e Programador</h1>
         <a href="#" onclick="moveContato()" id="btn-ctt">Entre em Contato</a>
       </div>
-      <div class="icons">
-        <a target="_blank" href="https://github.com/JeanCarlos899"><i class="fab fa-github"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/jean-carlos-a45936184/"><i class="fab fa-linkedin"></i></a>
-        <a target="_blank" href="https://www.instagram.com/jean_carl02/"><i class="fab fa-instagram"></i></a>
-      </div>
     </section>
     <div class="enfeite"></div>
     
@@ -51,7 +50,7 @@
         <section class="jean">
             <div class="container">
                 <a href="#" id="sobremim"></a>
-                <h1 class="titulo-principal">Sobre mim</h1>
+                <h1 class="titulo-principal">Sobre</h1>
 
                 <div class="row">
                     <div class="col-6"></div>
@@ -59,10 +58,10 @@
                         <div>
                             <h2>Jean Carlos Rodrigues Sousa</h2>
                             <ul>
-                                <li>Tecnico em Informática - IFPI</li>
+                                <li>Curso técnico em Informática - IFPI</li>
                                 <li>Entusiasta em Data Science</li>
                                 <li>Especialista em montagem e manutenção de computadores</li>
-                                <li>Programador Junior</li>
+                                <li>Programador Junior, criei diversos projetos particulares como Websites, adquirindo um vasto conhecimento nas diversas linguagens de programação hoje utilizadas no mercado.</li>
                             </ul>
                         </div>
                     </div>
@@ -73,11 +72,11 @@
         <!-- projetos -->
         <section class="projetos">
            <a href="#" id="projetos"></a>
-            <h1 class="titulo-projetos">PROJETOS</h1>
+            <h1 class="titulo-projetos">Projetos</h1>
             <div class="container">
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
+                    <div class="card text-white bg-dark mb-3">
                       <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="img/calculadora.jpg" data-holder-rendered="true">
                       <div class="card-body">
                         <p class="card-text">Esse projeto foi feito utilizando as ferramentas:</p>
@@ -97,7 +96,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
+                    <div class="card text-white bg-dark mb-3">
                       <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="img/tabuleiro.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
                       <div class="card-body">
                         <p class="card-text">Esse projeto foi feito utilizando as ferramentas:</p>
@@ -117,7 +116,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="card mb-4 box-shadow">
+                    <div class="card text-white bg-dark mb-3">
                       <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="img/formulario.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
                       <div class="card-body">
                         <p class="card-text">Esse projeto foi feito utilizando as ferramentas:</p>
@@ -139,7 +138,8 @@
                 </div>
               </div>
         </section>
-        <section class="contatos">
+
+        <!-- <section class="contatos">
             <a href="#" id="contato"></a>
             <div class="contatos-container">
                 <div style="text-align:center">
@@ -167,9 +167,23 @@
                   </div> 
                 </div>
               </div>
+        </section> -->
+
+        <section class="contato">
+          <a href="#" id="contato"></a>
+          <h1>Contato</h1>
+
+          <a href="" id="btn-msg">Envie uma mensagem</a>
+
+          <p>WhatsApp: (89) 99407-7295</p>
+          <p>jeancarllos99@outook.com</p>
+          <p style="font-size: 1.5rem;">*Responderei o mais breve possível!</p>
         </section>
+        
         <footer>
-          <p>Obrigado pela sua etenção! <a href="#" id="inicio">Voltar ao topo</a></p>
+          <div class="vertical">
+            <p>© Copyright 2021.</p>
+          </div>
         </footer>
     </main>
 </body>

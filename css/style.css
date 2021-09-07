@@ -88,17 +88,17 @@ body {
 
 /* imagem de fundo */
 .header {
+    z-index: 1000;
     width: 100%;
     min-height: 8vh;
-	background-color: #13293D;
-	background-size: cover;
-    background-position: top;
-    z-index: 0;
+	background-color: black;
+    z-index: 1000;
+    position: fixed;
 }
 
 .header-body {
     position: relative;
-    z-index: 1;  
+    z-index: 1001;  
     color: #fff;  
 }
 
@@ -107,11 +107,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 7rem;
+    height: 6rem;
 }
 
 .header nav h1 span {
-    color: #1B98E0;
+    color: #612F74;
 }
 
 .header nav ul li{
@@ -124,12 +124,11 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 1rem;
-    text-transform: uppercase;
     position: relative;
 }
 
 .header nav ul li:hover {
-    color: #006494;
+    color: #612F74;
 
 }
 
@@ -138,7 +137,7 @@ body {
     position: absolute;
     width: 0%;
     height: 0.2rem;
-    background-color: #006494;
+    background-color: #612F74;
     top: 4rem;
     left: 0;
     transition: 0.5s;
@@ -153,16 +152,20 @@ body {
 .header-conteudo {
     text-align: center;
     padding: 100px;
-    background-image: url(../img/9cceedb85aa7fdbe60f3512da07ee5bf.jpg);
-    min-height: 50rem;
+    background-image: url(../img/new-fundo.jpg);
+    min-height: 97vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .header-conteudo h1{
+    margin-top: 10rem;
     font-size: 5rem;
     font-family: 'Anton', sans-serif;
     font-weight: 400;
     padding: 0 18%;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
 .header-conteudo #btn-ctt {
@@ -170,44 +173,46 @@ body {
     margin-top: 2rem;
     text-decoration: none;
     color: #fff;
-    background-color: #247BA0;
+    background-color: rgb(6, 6, 6);
     padding: 2rem 4rem;
     font-weight: bold;
     border-radius: 1rem;
-    border: #13293D solid 0.3rem;
+    border: #612F74 solid 0.3rem;
 }
 
 .header-conteudo #btn-ctt:hover {
-    background-color: #1B98E0;
     transition: 0.5s;
-    color: #ffffff;
     transform: scale(1.1);
 }
 
 i {
     color: white;
     margin-top: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-right: 0.5rem;
     cursor: pointer;
 }
 
 i:hover {
-    transform: scale(1.1);
+    color: #612F74;
 }
 
+
 .enfeite {
-    background-color: #1B98E0;
+    background-color: #612F74;
     width: 100%;
-    height: 20px;
+    height: 3vh;
 }
 
 /* ------------ jean ------------ */
+.jean {
+    background-color: rgb(6, 6, 6);
+}
 .titulo-principal {
-    margin-top: 5rem;
+    padding-top: 2rem;
     text-align: center;
     text-transform: uppercase;
-    color: #13293D;
+    color: #ffffff;
     position: relative;
     display: flex;
     justify-content: center;
@@ -218,14 +223,10 @@ i:hover {
     position: absolute;
     width: 10rem;
     height: 0.6rem;
-    background-color: #006494;
-    top: 4rem;
+    background-color: #612F74;
+    top: 5.5rem;
     transition: 0.5s;
 
-}
-
-.jean {
-    padding-top: 6rem;
 }
 
 .jean .container .row .col-6{
@@ -258,38 +259,39 @@ i:hover {
     min-height: 70rem;
     display: flex;
     align-items: center;
+    color: white;
 
 }
 
 .descricao-jean h2 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .descricao-jean ul {
     list-style: none;
-  }
+}
 
 .descricao-jean ul li {
     position: relative;
-    margin: 2.5rem 0 2.5rem 2rem;
+    margin: 0 0 0 0;
 }
 
 .descricao-jean ul li:before {
     content: '';
-    background-color: #006494;
-    height: 2rem;
-    width: 2rem;
+    background-color: #612F74;
+    height: 1rem;
+    width: 1rem;
     clip-path: circle();
     /* margin: 2rem 0; */
     position: absolute;
     left: -3.5rem;
-    top: 0.5rem;
+    top: 1.2rem;
     
 }
 /* ------------ projetos ------------ */
 
 .projetos {
-    background-color: #247BA0;
+    background-color: rgb(20, 20, 20);
 }
 
 .projetos h1 {
@@ -321,30 +323,49 @@ background-color: #45a049;
 }
 
 /* Style the container/contact section */
-.contatos-container {
-    align-items: center;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    padding: 5% 30% 5% 30%;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    font-size: 1.8rem;
-
+.contato {
+    padding: 5rem;
+    background-color: black;
+    text-align: center;
+    color: white;
 }
-
+.contato p{
+    margin: 0;
+}
+.contato h1 {
+    padding-bottom: 5rem;
+}
 footer {
     color: white;
     width: 100%;
-    height: 3.8rem;
+    height: 20vh;
     position: relative;
     bottom: 0;
     left: 0;
     padding-bottom: 0px;
     text-align: center;
-    background-color: black;
-
+    background-color: #060606;
+    vertical-align: center;
+    line-height: 20vh;
 }
+#btn-msg {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #fff;
+    background-color: rgb(6, 6, 6);
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: #612F74 solid 0.3rem;
+}
+#btn-msg:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: white;
+    outline: 0;
+}
+
 /* ------------ Responsivo ------------*/
 
 /* ------------ tablet ------------ */
