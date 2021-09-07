@@ -22,6 +22,21 @@ body {
     margin: 0 auto;
 }
 
+/* ------personalização da scrollbar-------- */
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(6, 6, 6);  
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(41, 41, 41);   
+    border-radius: 20px;       
+    border: 3px solid rgb(41, 41, 41); 
+}
+
 
 /* ------------ sistema de grid com 12 colunas ------------ */
 .row::after {
@@ -86,7 +101,6 @@ body {
 
 /* ------------ cabeçalho ------------ */
 
-/* imagem de fundo */
 .header {
     z-index: 1000;
     width: 100%;
@@ -94,6 +108,8 @@ body {
 	background-color: black;
     z-index: 1000;
     position: fixed;
+    opacity: 90%;
+    
 }
 
 .header-body {
@@ -145,6 +161,14 @@ body {
 
 .header nav ul li:hover::after {
     width: 100%;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #612F74;
+    text-decoration: none;
 }
 
 
@@ -259,7 +283,7 @@ i:hover {
     display: flex;
     align-items: center;
     color: white;
-
+    text-align: justify;
 }
 
 .descricao-jean h2 {
@@ -300,29 +324,8 @@ i:hover {
     margin-bottom: 2rem;
 }
 
-/* ------------ contato ------------ */
+/* ------------ contato e footer ------------ */
 
-/* Style inputs */
-input[type=text], select, textarea {
-width: 60rem;
-padding: 12px;
-border: 1px solid #E8F1F2;
-resize: vertical;
-}
-
-input[type=submit] {
-background-color: #04AA6D;
-color: white;
-padding: 12px 20px;
-border: none;
-cursor: pointer;
-}
-
-input[type=submit]:hover {
-background-color: #45a049;
-}
-
-/* Style the container/contact section */
 .contato {
     padding: 5rem;
     background-color: black;
