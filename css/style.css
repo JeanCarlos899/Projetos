@@ -221,12 +221,11 @@ i:hover {
 .titulo-principal::after {
     content: '';
     position: absolute;
-    width: 10rem;
+    width: 12rem;
     height: 0.6rem;
     background-color: #612F74;
     top: 5.5rem;
     transition: 0.5s;
-
 }
 
 .jean .container .row .col-6{
@@ -298,6 +297,7 @@ i:hover {
     text-align: center;
     padding: 20px 0 0 0;
     color: white;
+    margin-bottom: 2rem;
 }
 
 /* ------------ contato ------------ */
