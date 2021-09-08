@@ -378,14 +378,13 @@ footer {
     :root {
         font-size: 50%;
     }
-
 }
 
 /* ------------ celular ------------ */
 @media (max-width: 700px) {
     /* configurações base */
     :root {
-        font-size: 33%;
+        font-size: 25%;
     }
 
     /* header */
@@ -393,7 +392,8 @@ footer {
         min-height: 5vh;
     }
     .header-conteudo h1{
-        font-size: 5rem;
+        font-size: 6rem;
+        margin-top: 15vh;
         padding: 0;
         width: 100%;
     }
@@ -401,8 +401,17 @@ footer {
     /* jean */
     .jean .container .row {
         display: flex;
-        flex-direction: column-reverse;
-
+ 
+    }
+    .projetos .titulo-principal::after {
+        content: '';
+        position: absolute;
+        width: 12rem;
+        height: 0.6rem;
+        background-color: #612F74;
+        top: 5.5rem;
+        transition: 0.5s;
+        margin-top: 3.5rem;
     }
 
     .jean .container .row .col-6{
@@ -410,10 +419,3 @@ footer {
     }
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}
