@@ -129,13 +129,14 @@ body::-webkit-scrollbar-thumb {
 .header nav h1 span {
     color: #612F74;
 }
-
+.header nav h1 {
+    margin-top: -1rem;
+}
 .header nav ul li{
     list-style: none;
     display: inline;
     cursor: pointer;
 }
-
 .header nav ul li  {
     color: #fff;
     text-decoration: none;
