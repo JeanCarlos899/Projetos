@@ -1,4 +1,4 @@
-# projetos
+# Projetos
 Portfólio de projetos
 
 Trata-se de um projeto da disciplina de Introdução a Programação WEB - IFPI, 2º ano.
